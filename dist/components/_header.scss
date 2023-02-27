@@ -1,4 +1,14 @@
 .header{
+    position: relative;
+    position: fixed;
+    width: 100%;
+ 
+    .container{
+         display: flex;
+         justify-content: space-between;
+         place-items: center;
+    }
+   
     .branding{
         display: flex;
         align-items: center;
@@ -13,6 +23,101 @@
             img{
                 width: 5rem;
             }
+    }
+
+    .header__nav{
+        position: absolute;
+        top: 8rem;
+        background: #e6e6e6;
+        right: -100rem;
+        width: 100%;
+        text-align: center;
+        height: 100vh; 
+        transition: .5s ease;
+        ul{
+            li{
+                padding: 3rem 0;
+                border-bottom: 1px solid black;
+                a{
+                    color: $clr-light;
+                    font-size: 3rem;
+                    color: black;
+                    
+                }
+            }
+            li:hover a{
+                    color: #ffa700;
+            }
+        }
+        &.open{
+            right: 0;
+        }
+    }
+
+    
+
+    .toggle__menu.open{
+
+         span:nth-child(1) {
+            transform: translate(0,10px) rotate(225deg);
+            transition: .5s ease;
+        
+        }
+        
+        span:nth-child(2) {
+            transform: translate(0,10px) rotate(45deg);
+            opacity: 0;
+            transition: .5s ease;
+        }
+        
+         span:nth-child(3) {
+            transform: translate(0,-6px) rotate(-225deg);
+            transition: .5s ease;
+        }
+    }
+
+    .toggle__menu{
+        span{
+            width:  3rem;
+            height: .3rem;
+            background-color: #ffa700;
+            display: block;
+            margin-bottom: .5rem;
+            border-radius: 5rem;
+            transition: .5s ease;
+        }
+     
+
+    }
+
+    @include mediaQuery($break-lg){
+        .toggle__menu{
+            display: none;
+        }
+        .header__nav{
+            position: unset;
+            width: unset;
+            height: unset;
+            background: none;
+            ul{
+                display: flex;
+                li{
+                    margin-left: 2.5rem;
+                    border-bottom: none;
+                    a{
+                        color: $clr-light;
+                        font-size: 2rem;
+                    }
+                    a:hover{
+                        background: none;
+                        color: $clr-primary;
+                    }
+                   
+                }
+            }
+            
+        }
+        
     }
    
 }

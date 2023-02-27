@@ -1,3 +1,4 @@
+/*---breakpoints---*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,6 +7,10 @@
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 html {
@@ -232,6 +237,118 @@ body {
   margin-left: 20rem 0;
 }
 
+.banner {
+  padding: 0 4rem;
+}
+.banner .container .banner__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14rem;
+}
+.banner .container .banner__wrapper .banner__text {
+  text-align: center;
+}
+.banner .container .banner__wrapper .banner__text h1 {
+  color: #ffa700;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.banner .container .banner__wrapper .banner__text p {
+  text-align: justify;
+}
+.banner .container .banner__wrapper .banner__text a {
+  font-weight: 500;
+  margin-top: 10rem;
+  background: #ffa700;
+  padding: 1.5rem 2rem;
+  color: #ffffff;
+  border-radius: 10rem;
+}
+.banner .container .banner__wrapper img {
+  max-width: 100%;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 970px) {
+  .banner .container .banner__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .banner .container .banner__wrapper .banner__text {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner .container .banner__wrapper .banner__text h1 {
+    color: #ffa700;
+    font-size: 10rem;
+    font-weight: 800;
+    max-width: 20%;
+    line-height: 1;
+  }
+  .banner .container .banner__wrapper .banner__text p {
+    max-width: 80%;
+  }
+  .banner .container .banner__wrapper .banner__text a {
+    max-width: 20%;
+    margin-top: 5rem;
+  }
+}
+
+.hm-services {
+  margin-top: 7rem;
+  padding: 0 4rem;
+  background: #2b2b2b;
+}
+.hm-services .container .services__wrapper {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+.hm-services .container .services__wrapper .services__item i {
+  color: #ffa700;
+  font-size: 6rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  padding-top: 5rem;
+}
+.hm-services .container .services__wrapper .services__item h4 {
+  color: #ffa700;
+  font-size: 2.5rem;
+  padding-bottom: 3rem;
+}
+.hm-services .container .services__wrapper .services__item p {
+  text-align: justify;
+  margin-bottom: 3rem;
+  color: #ffffff;
+}
+.hm-services .container .services__wrapper .services__item a {
+  font-weight: 500;
+  margin-top: 2.5rem;
+  background: #ffa700;
+  padding: 1.5rem 2rem;
+  color: #ffffff;
+  border-radius: 10rem;
+}
+@media screen and (min-width: 970px) {
+  .hm-services .container .services__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10rem;
+  }
+}
+
+.header {
+  position: relative;
+  position: fixed;
+  width: 100%;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+}
 .header .branding {
   display: flex;
   align-items: center;
@@ -246,4 +363,77 @@ body {
 }
 .header .branding img {
   width: 5rem;
+}
+.header .header__nav {
+  position: absolute;
+  top: 8rem;
+  background: #e6e6e6;
+  right: -100rem;
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+  transition: 0.5s ease;
+}
+.header .header__nav ul li {
+  padding: 3rem 0;
+  border-bottom: 1px solid black;
+}
+.header .header__nav ul li a {
+  color: #ffffff;
+  font-size: 3rem;
+  color: black;
+}
+.header .header__nav ul li:hover a {
+  color: #ffa700;
+}
+.header .header__nav.open {
+  right: 0;
+}
+.header .toggle__menu.open span:nth-child(1) {
+  transform: translate(0, 10px) rotate(225deg);
+  transition: 0.5s ease;
+}
+.header .toggle__menu.open span:nth-child(2) {
+  transform: translate(0, 10px) rotate(45deg);
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.header .toggle__menu.open span:nth-child(3) {
+  transform: translate(0, -6px) rotate(-225deg);
+  transition: 0.5s ease;
+}
+.header .toggle__menu span {
+  width: 3rem;
+  height: 0.3rem;
+  background-color: #ffa700;
+  display: block;
+  margin-bottom: 0.5rem;
+  border-radius: 5rem;
+  transition: 0.5s ease;
+}
+@media screen and (min-width: 970px) {
+  .header .toggle__menu {
+    display: none;
+  }
+  .header .header__nav {
+    position: unset;
+    width: unset;
+    height: unset;
+    background: none;
+  }
+  .header .header__nav ul {
+    display: flex;
+  }
+  .header .header__nav ul li {
+    margin-left: 2.5rem;
+    border-bottom: none;
+  }
+  .header .header__nav ul li a {
+    color: #ffffff;
+    font-size: 2rem;
+  }
+  .header .header__nav ul li a:hover {
+    background: none;
+    color: #ffa700;
+  }
 }/*# sourceMappingURL=main.css.map */
