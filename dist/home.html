@@ -4,97 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a2592a1c75.js" crossorigin="anonymous"></script>
-    <title>Creative Visual Design</title>
     <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Document</title>
 </head>
 <body>
 
-        <header class="header bg--dark">
-            <div class="container">
-                <div class="header__wrapper">
-                    <div class="branding">
-                        <img src="../dist/img/home/Ellipse 1.png" alt="">
-                        <h3>Creative <span>Visual</span> Design</h3>
-                    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="branding">
+                    <img src="./img/apple-touch-icon.png" alt="">
+                    <h3>Visual Studio Code</h3>
                 </div>
-                <div class="header__nav">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Update</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
+                <div class="burger__btn">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
-                <div class="toggle__menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                
             </div>
-        </header>
+            <div class="header__nav">
+                <ul>
+                    <li><a href="">Docs</a></li>
+                    <li><a href="">Updates</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">API</a></li>
+                    <li><a href="">Extensions</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Learn</a></li>
+                    <div class="searchBtn">
+                        <i class="fas fa-magnifying-glass"></i><input type="search" name="" id="" placeholder="Search Docs"> 
+                    </div>
+                
+                </ul>
+              
+               <div class="blueBtn"><a href=""><i class="fa-solid fa-arrow-down"></i>Download</a></div>
+            </div> 
+         
+    </header>
 
-
-        <section class="banner">
-            <div class="container">
-                <div class="banner__wrapper">
+    <section class="banner">
+        <div class="banner__title"><p><span>Version 1.76</span> is now available! Read about the new features and fixes from February</p></div>
+        <div class="container"> 
+           
+            <div class="banner__wrapper">
                     <div class="banner__text">
-                        <h1>Creative Visual Design</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.\
-                                 Nisi modi, possimus illum ut magni sed pariatur enim velit 
-                                 facilis eveniet unde eum, nam ad eius accusamus mollitia. 
-                                 Aliquid soluta culpa placeat pariatur voluptates eum labore 
-                                 necessitatibus deleniti possimus. Molestiae quis aut velit unde
-                                 modi iure optio. Impedit itaque expedita ex!</p>
-                                    <a id="banner__btn" class="btn bg--yellow" href="">explore more</a>
+                        <h1>Code editing. <br> <span>Redefined. </span> </h1>
+                            <p>Free. Built on open source. Runs everywhere</p>
+                            <div class="banner__text__btn">
+                               <div class="btn__big">
+                                    <p><a href="">Download For Windows <br> <span>Stable Build</span></a></p>
+                               </div>
+                               <div class="btn__short">
+                                    <a href=""><i class="fa-solid fa-angle-down">
+                                       
+                                    </i></a>
+                               </div>
+                            </div>
+                                <div class="small">
+                                    <p><a href="">Web, </a><a href="">Insiders edition, </a> or <a href="">other platforms</a></p>
+                                </div>
+                                <div class="text">
+                                         <p>By using VS Code, uou agree to its</p>
+                                        <a href="">license and privacy statement.</a>
+                                </div>
+                               
                     </div>
-                    <img src="./img/home/Hero.png" alt="" >
-                </div>
+                    <div class="banner__img">
+                        <img src="./img/home-screenshot-win.png" alt="">
+                    </div>
+               
             </div>
-        </section>
+               
+        </div>
+    </section>
+    <div class="icons">
+        <div class="icon">
+              <i class="fa-regular fa-lightbulb"></i>
+              <span>IntelliSense</span>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-bug"></i>
+              <span>Run and Debug</span>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-code-branch"></i>
+              <span>Built-in Git</span>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-puzzle-piece"></i>
+              <span>Extensions</span>
+        </div>
+      
+    </div>
 
-        <section class="hm-services">
-            <div class="container">
-                <div class="services__wrapper">
-                    <div class="services__item">
-                        <i class="fa-solid fa-globe"></i>
-                        <h4>Web Design and Development</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Totam in, quae repellat saepe 
-                            ut dolorum?
-                            Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Totam in, quae repellat saepe 
-                            ut dolorum?</p>
-                        <a class="btn bg--yellow" href="">Get a quote</a>
-                    </div>
-                    <div class="services__item">
-                        <i class="fa-solid fa-pen-ruler"></i>
-                        <h4>Graphic and Vector Design</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Totam in, quae repellat saepe 
-                            ut dolorum?
-                            Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Totam in, quae repellat saepe 
-                            ut dolorum?</p>
-                        <a class="btn bg--yellow" href="">Get a quote</a>
-                    </div>
-                    <div class="services__item">
-                        <i class="fa-solid fa-globe"></i>
-                        <h4>Social Media Specialist</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Totam in, quae repellat saepe 
-                            ut dolorum?
-                            Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Totam in, quae repellat saepe 
-                            ut dolorum?</p>
-                        <a class="btn bg--yellow" href="">Get a quote</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <script src="./script.js"></script>
-
+<script src="./script.js"></script>
+    
 </body>
 </html>
