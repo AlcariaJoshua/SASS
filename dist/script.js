@@ -7,3 +7,11 @@ show.addEventListener('click', () =>{
     hideNav.classList.toggle("open");
 })
 
+var slider = tns({
+    container: '.slider__slider',
+    items: 1,
+    slideBy: 'page',
+    autoplay: false,
+    controlsText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+
+  });

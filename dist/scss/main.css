@@ -255,8 +255,12 @@ body {
   max-width: 80%;
   margin: 0 auto;
 }
-.banner .banner__title p span {
+.banner .banner__title p a {
   color: #0098ff;
+  padding-right: 1rem;
+}
+.banner .banner__title p a:hover {
+  text-decoration: underline;
 }
 @media screen and (min-width: 970px) {
   .banner .container .banner__wrapper {
@@ -306,6 +310,9 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
+.banner .container .banner__wrapper .banner__text .banner__text__btn .btn__big p a:hover {
+  text-decoration: underline;
+}
 .banner .container .banner__wrapper .banner__text .banner__text__btn .btn__short {
   margin-left: 0.5rem;
   background: #005ba4;
@@ -315,20 +322,44 @@ body {
 .banner .container .banner__wrapper .banner__text .banner__text__btn .btn__short a i {
   color: #ffffff;
 }
+.banner .container .banner__wrapper .banner__text .banner__text__btn .btn__short a i:hover {
+  text-decoration: underline;
+}
 .banner .container .banner__wrapper .banner__text .small {
   background: #25252b;
   width: 100%;
   max-width: 65%;
   margin: 0 auto;
   border-radius: 1rem;
+  position: relative;
 }
-.banner .container .banner__wrapper .banner__text .small p {
+@media screen and (min-width: 970px) {
+  .banner .container .banner__wrapper .banner__text .small {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.banner .container .banner__wrapper .banner__text .small .p2 {
   padding: 1rem 0rem;
   font-size: 1.3rem;
 }
-.banner .container .banner__wrapper .banner__text .small p a {
+.banner .container .banner__wrapper .banner__text .small .p2 a {
   color: #036dc4;
   text-decoration: none;
+}
+.banner .container .banner__wrapper .banner__text .small .p2 a:hover {
+  text-decoration: underline;
+}
+.banner .container .banner__wrapper .banner__text .small .p2::after {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  transform: rotate(45deg);
+  background: #25252b;
+  position: absolute;
+  top: -0.6rem;
+  right: 2rem;
 }
 .banner .container .banner__wrapper .banner__text .text {
   display: flex;
@@ -343,6 +374,9 @@ body {
 .banner .container .banner__wrapper .banner__text .text a {
   color: #036dc4;
   font-size: 1.3rem;
+}
+.banner .container .banner__wrapper .banner__text .text a:hover {
+  text-decoration: underline;
 }
 .banner .container .banner__img {
   margin-left: 2rem;
@@ -371,20 +405,57 @@ body {
     margin: 0 auto;
   }
 }
-.icons .icon {
+.icons .icon1, .icons .icon2, .icons .icon3, .icons .icon4 {
   padding: 3rem 0;
   display: flex;
   flex-direction: column;
   place-items: center;
   width: 100%;
 }
-.icons .icon i {
+.icons .icon1 i, .icons .icon2 i, .icons .icon3 i, .icons .icon4 i {
   font-size: 5rem;
   padding-bottom: 2rem;
 }
-.icons .icon:hover {
-  background-color: #25252b;
+.icons .icon1:hover {
+  background-color: #d4d4d4;
   color: #ffffff;
+  color: indigo;
+}
+.icons .icon2:hover {
+  background-color: #d4d4d4;
+  color: #ffffff;
+  color: #3fec3f;
+}
+.icons .icon3:hover {
+  background-color: #d4d4d4;
+  color: #ffffff;
+  color: #db3737;
+}
+.icons .icon4:hover {
+  background-color: #d4d4d4;
+  color: #ffffff;
+  color: #000000;
+}
+
+.slider {
+  height: auto;
+  position: relative;
+}
+.slider .container .tns-outer .tns-controls {
+  position: absolute;
+  z-index: 1;
+  top: 15rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 94%;
+}
+.slider .container .tns-outer .tns-controls button {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  outline: none;
+  border: none;
 }
 
 .header {
