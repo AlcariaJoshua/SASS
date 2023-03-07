@@ -13,5 +13,9 @@ var slider = tns({
     slideBy: 'page',
     autoplay: false,
     controlsText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-
+    reponsive:{
+        967:{
+        items: 3,
+        }
+    },
   });
