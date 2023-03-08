@@ -644,6 +644,9 @@ body {
 .getting__started .container .languages p img {
   vertical-align: middle;
 }
+.getting__started .getting__started__link {
+  font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
 .getting__started .getting__started__link p {
   text-align: center;
   font-size: 1.8rem;
@@ -661,13 +664,16 @@ body {
   text-align: center;
 }
 .getting__started .get__started__btn a {
-  font-weight: 600;
+  font-weight: 500;
   padding: 15px 35px;
   background-color: #005ba4;
   text-decoration: none;
   color: #ffffff;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+.getting__started .get__started__btn a:hover {
+  background-color: #003f71;
 }
 
 .alt__download {
@@ -696,13 +702,16 @@ body {
   color: #fff;
   margin: 20px 0 5px;
   padding: 10px 0;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   width: 240px;
   background-color: #0066b8;
   border: none;
 }
 .alt__download .container .download button small {
   font-size: 1rem;
+}
+.alt__download .container .download button:hover {
+  background-color: #004a85;
 }
 .alt__download .container .download table {
   margin-top: 16px;
@@ -722,6 +731,9 @@ body {
   white-space: nowrap;
   font-size: 12px;
 }
+.alt__download .container .download table tr td a:hover {
+  background-color: #004a85;
+}
 .alt__download .container .download .double__btn {
   display: flex;
   gap: 1rem;
@@ -736,13 +748,16 @@ body {
   color: #fff;
   margin: 20px 0 5px;
   padding: 10px 0;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   width: 240px;
   background-color: #0066b8;
   border: none;
 }
 .alt__download .container .download .double__btn button small {
   font-size: 1rem;
+}
+.alt__download .container .download .double__btn button:hover {
+  background-color: #004a85;
 }
 
 .insider__callouts {
@@ -768,7 +783,7 @@ body {
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: #444;
-  font-size: 2.1rem;
+  font-size: 2rem;
 }
 .insider__callouts .container .callout__text h3 a {
   color: #0066b8;
@@ -777,7 +792,7 @@ body {
   text-decoration: underline;
 }
 .insider__callouts .container .callout__text p {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #3b3a3a;
   font-weight: 400;
   line-height: 4rem;
@@ -813,11 +828,100 @@ body {
 }
 
 footer {
+  padding: 20px 0;
   background-color: #333;
   text-decoration: none;
   color: #ffffff;
+  font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+@media screen and (min-width: 970px) {
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    width: 1170px;
+  }
+}
+@media screen and (min-width: 970px) {
+  footer .container .top__text {
+    display: flex;
+    width: 100%;
+  }
+}
+footer .container .top__text .topFooter__link {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+@media screen and (min-width: 970px) {
+  footer .container .top__text .topFooter__link {
+    width: 35%;
+  }
+}
+footer .container .top__text .topFooter__link a {
+  color: #ffffff;
+  padding-right: 1rem;
+  font-size: 1.4rem;
+}
+footer .container .top__text .topFooter__link a:hover {
+  color: #b4a0ff;
+}
+footer .container .top__text .topFooter__link span {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1.3rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 0;
+  padding-right: 0.5rem;
+  margin-right: 0.2rem;
+}
+footer .container .footer__link {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 970px) {
+  footer .container .footer__link {
+    width: 60%;
+  }
+}
+footer .container .footer__link .right__col {
+  width: 100%;
+}
+footer .container .footer__link .right__col ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  padding-right: 2.5rem;
+}
+footer .container .footer__link .right__col ul li a {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+footer .container .footer__link .right__col ul li a:hover {
+  color: #b4a0ff;
+}
+footer .container .footer__link .left__col {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+footer .container .footer__link .left__col img {
+  width: 70%;
 }
 
+#hide__inMobile {
+  display: none;
+}
+
+@media screen and (min-width: 970px) {
+  #hide__inMobile {
+    display: block;
+  }
+}
 .header {
   margin: 0;
   width: 100%;
